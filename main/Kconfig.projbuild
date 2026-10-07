@@ -1,0 +1,21 @@
+menu "Custom Configuration"
+
+    config WIFI_SSID
+        string "WiFi SSID"
+        default "YOUR_SSID"
+        help
+            Set the SSID of your WiFi network. This is the name of the network you want to connect to.
+
+    config WIFI_PASSWORD
+        string "WiFi Password"
+        default "YOUR_PASSWORD"
+        help
+            Set the password for your WiFi network. This is the password required to connect to your WiFi.
+
+    config MQTT_BROKER_URI
+        string "MQTT Broker URI"
+        default "mqtt://YOUR_MQTT_BROKER_URI"
+        help
+            Set the URI of your MQTT broker. This is the address of the MQTT server you want to connect to.
+
+endmenu
